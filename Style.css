@@ -12,25 +12,26 @@ background: rgb(243, 238, 238);
 /* HEADER */
 
 header{
+    display: flex;
+    align-items: center;
 background:#0a3d62;
 color: lightgray;
-padding:15px;
+padding:15px 20px;
 text-align:left;
 font-size: 20px;
 height: 180px;
 }
 
 .logo img{
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
 }
 
 /* NAVIGATION MENU */
-
 nav{
 margin-top:10px;
 text-align: right;
-
+margin-left: 900px;
 }
 
 nav a{
@@ -38,11 +39,23 @@ color: rgb(243, 241, 241);
 text-decoration:none;
 margin:0 50px;
 font-size:25px;
+justify-content: right;
 }
 
 nav a:hover{
 text-decoration:underline;
 color: rgb(226, 165, 199);
+}
+
+.about-me-icons{
+   display: block;
+   font-size: 40px;
+   color: white;
+   margin-right: auto;
+   color: #069dcf;
+   transform: scale(1.1);
+   transition: 0.3s;
+   
 }
 
 .center-container{
@@ -56,22 +69,40 @@ color: rgb(226, 165, 199);
     margin: 22px auto;
     width: 2000px;
     height: auto;
+    padding-right: 10px;
     
     
 }
 .hero-text{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 50px;
+    font-size: 40px;
+    font-family: Forte;
     font-display: auto;
     padding: 50px;
+    color: rgb(23, 24, 26);
+    
+}
+
+.hero-text h1{
+    font-size: 50px;
+    font-family: ALGERIAN;
+    font-display: auto;
+    padding: 5px;
     color: rgb(23, 24, 26);
 }
 
 .hero-image{
     width: 1000px;
-    height: 50%;
-   
+    height: 1000px;
+    
+    padding-left: 1%;
 }
+
+.hero-img{
+    width: 1000px;
+    height: 1000px;
+    padding-left: 30px
+}
+
 
 .buttons{
     margin-top: 25px;
@@ -94,6 +125,49 @@ color: rgb(226, 165, 199);
     font-family: Arial;
     font-size: 25px;
     font-weight: bolder;
+}
+
+.electronics-info{
+    padding:40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    background-color: #0e82d4;
+}
+
+.info-boxes{
+    display:flex;
+    justify-content:center;
+    gap: 100px;
+    margin-top:10px;
+    background-color: rgb(11, 9, 126);
+}
+
+.box{
+    background:rgb(134, 75, 211);
+    padding:40px;
+    width:350px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    background-color: #0a2499;
+}
+
+.box p{
+    font-size:30px;
+    line-height:1.6;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.box:hover{
+    transform: translateY(-5px);
+    transition: 1s;
 }
 
 /* BANNER (HOME PAGE) */
@@ -132,6 +206,23 @@ flex-wrap:wrap;
 padding:30px;
 }
 
+.btnn{
+    background-color: #dce2e6;
+    color: black;
+    padding: 20px;
+    font-family: Arial;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.products{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+.prdct{
+    font-family: ALGERIAN;
+    font-size: 100px;
+}
 
 /* PRODUCT CARD */
 
@@ -167,7 +258,7 @@ transform:scale(1.05);
 
 button{
 background:#0a3d62;
-color:white;
+color:rgb(248, 245, 245);
 border:none;
 padding:10px 15px;
 margin-top:10px;
@@ -178,26 +269,66 @@ border-radius:5px;
 button:hover{
 background:#1e5f8a;
 }
+.end{
+    background-color: #b7ccdb;
+    text-align: center;
+    font-family: Ravie;
+}
 
 
 /* ABOUT PAGE */
 
-.about{
-width:80%;
-margin:auto;
-text-align:center;
-padding:40px;
-font-size:28px;
-line-height:1.6;
+.about-section{
+
+line-height:1.8;
+font-size:24px;
+text-align: left;
 }
 
-.items{
-width:80%;
-margin:auto;
+.about-section h2{
 text-align:center;
-padding:40px;
-font-size:28px;
-line-height:1.6; 
+margin-bottom:30px;
+color:#003366;
+font-size: 50px;
+font-family: ALGERIAN;
+}
+
+.services-section{
+padding:60px;
+text-align:center;
+background-color: #4f94da;
+}
+
+.services-section h2{
+margin-bottom:40px;
+color:#18191a;
+font-size: 50px;
+font-family: ALGERIAN;
+}
+
+.services-container{
+display:flex;
+justify-content:center;
+gap:100px;
+flex-wrap:wrap;
+}
+
+.service-box{
+background:white;
+width:260px;
+padding:25px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.service-box h3{
+margin-bottom:15px;
+color:#003366;
+}
+
+.service-box p{
+font-size:15px;
+line-height:1.6;
 }
 
 
@@ -240,7 +371,6 @@ width:100%;
 height: 100%;
 }
 
-
 /* FOOTER */
 
 footer{
@@ -250,3 +380,30 @@ text-align:center;
 padding:15px;
 margin-top:40px;
 }
+
+    @media (max-width: 768px) {
+
+    /* Hide menu initially */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #0b3d91;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 200px;
+        padding: 15px;
+    }
+
+    /* Show burger */
+    .about-me-icons {
+        display: block;
+    }
+
+    /* SHOW MENU WHEN CLICKED */
+    #menu-toggle:checked ~ nav .nav-links {
+        display: flex;
+    }
+}
+
+
