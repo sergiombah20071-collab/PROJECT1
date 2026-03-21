@@ -211,13 +211,13 @@ padding:30px;
     color: black;
     padding: 20px;
     font-family: Arial;
-    font-size: 25px;
+    font-size: 1000px;
     font-weight: bolder;
 }
 
 .products{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 18px;
 }
 .prdct{
     font-family: ALGERIAN;
@@ -228,20 +228,21 @@ padding:30px;
 
 .product-card{
 background:white;
-width:250px;
+width:270px;
+height: 500px;
 padding:15px;
 text-align:center;
 border-radius:10px;
 box-shadow:0 0 10px rgba(0,0,0,0.2);
-transition:0.3s;
+transition:0.5s;
 }
 
 
 /* PRODUCT IMAGE */
 
 .product-card img{
-width:100%;
-height:180px;
+width:80%;
+height:60%;
 object-fit:cover;
 border-radius:8px;
 }
@@ -264,10 +265,12 @@ padding:10px 15px;
 margin-top:10px;
 cursor:pointer;
 border-radius:5px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
 }
 
 button:hover{
-background:#1e5f8a;
+background:#b62d88;
 }
 .end{
     background-color: #b7ccdb;
